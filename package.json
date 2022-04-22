@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "start": "nodemon index.js",
+    "dev2": "set NODE_ENV=development&ts-node-dev --respawn --transpile-only index.js",
+    "dev": "node src/app.js",
+    "build": "tsc",
+    "deploy": "tsc && vercel deploy"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongodb": "^4.5.0",
+    "sqlite3": "^5.0.4",
+    "uuid": "^8.3.2"
+  },
+  "name": "vercel-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@vercel/node": "^1.14.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.3"
+  }
+}
